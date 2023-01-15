@@ -2,3 +2,7 @@
 This is a tutorial for how to log into a course-specific account on ieng6 for CSE 15L.
 ## Installing VSCode
 
+## Remotely Connecting
+
+## Trying Some Commands
+
