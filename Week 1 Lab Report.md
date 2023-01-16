@@ -10,7 +10,9 @@ This is what the download page would look like:
 When done downloading, open the VScode application and this is what the home page would look like:
 ![Image](VScode home page.png)
 
-## Remotely Connecting
+You have now install VScode in your personal computer and can proceed to the next steps.
 
+## Remotely Connecting
+Now that you've installed VScode, 
 ## Trying Some Commands
 
