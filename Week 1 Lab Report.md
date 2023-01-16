@@ -14,8 +14,6 @@ Enter your current password and your new password for this CSE 15L account. **Yo
 5. After that, the new page should have it say that your password was accepted and you must wait a few minutes for you to access your account.
 6. To check if you can access you can check with the terminal which will be covered in the later part of this guide.
 
-If directions unclear, here is the detailed tutorial I used: [CSE 15L account password reset tutorial](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
-
 ## Installing VSCode
 Go to this [VScode website link](https://code.visualstudio.com/) to install VScode code editor based on your own operating system such as, macOs and Windows.
 
@@ -58,5 +56,7 @@ This example contains:
 
 
 To exit the remote server, you can either type in the command `exit` or `Ctrl`+`D`.
+
+**You have now finished this guide for logging into your CSE 15L account using a terminal to execute commands on a remote server. Hope that this guide has helped you!**
 
 
