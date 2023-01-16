@@ -1,16 +1,16 @@
 # ***Week 1 Lab Report***
 This is a tutorial for how to log into a course-specific account on ieng6 for CSE 15L and to run commands on a remote server. This guide will go through how to install VScode, how to connect to a remote server, and how to execute some commands in the terminal.
 ---
-## Accessing CSE 15L
+## Accessing your CSE 15L account
 Go to this [link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID to access your course-specific account.
 ![Image](CSE 15L Account Lookup.png)
-Steps to reset password:
+**Steps to reset password:**
 1. Click on the button where Additonal Accounts is located. That is your account name for CSE 15L.
 2. After clicking the button, you then must click on the change your password link. Then type in your username and password again.
 3. You are now in this page:
 ![Image](CSE 15L Account Password Reset.png)
-Enter your current password and your new password for this CSE 15L account. **You must have `Change MyTritonLink password?` as `No` and `Change course-specific account passwords?` as `Yes`**
-4. **Important** Instead of clicking the `Check Password` button, you must instead click `return` after confirming your new password.
+Enter your current password and your new password for this CSE 15L account. **You must have** `Change MyTritonLink password?` **as** `No` **and** `Change course-specific account passwords?` **as** `Yes`.
+4. **Important**: Instead of clicking the `Check Password` button, you must instead click `return` after confirming your new password.
 5. After that, the new page should have it say that your password was accepted and you must wait a few minutes for you to access your account.
 6. To check if you can access you can check with the terminal which will be covered in the later part of this guide.
 
