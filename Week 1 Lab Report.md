@@ -1,6 +1,6 @@
 # ***Week 1 Lab Report***
 This is a tutorial for how to log into a course-specific account on ieng6 for CSE 15L and to run commands on a remote server. This guide will go through how to install VScode, how to connect to a remote server, and how to execute some commands in the terminal.
-____
+---
 ## Accessing CSE 15L
 Go to this [link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID to access your course-specific account.
 ![Image](CSE 15L Account Lookup.png)
@@ -58,5 +58,6 @@ This example contains:
 To exit the remote server, you can either type in the command `exit` or `Ctrl`+`D`.
 
 **You have now finished this guide for logging into your CSE 15L account using a terminal to execute commands on a remote server. Hope that this guide has helped you!**
+---
 
 
