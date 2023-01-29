@@ -3,7 +3,7 @@ This is a tutorial for how to log into a course-specific account on ieng6 for CS
 
 ## Accessing your CSE 15L account
 Go to this [link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID to access your course-specific account.
-![Image](Lab-Report-1-Photos/CSE 15L Account Lookup.png)
+![Image](CSE 15L Account Lookup.png)
 **Steps to reset password:**
 1. Click on the button where Additonal Accounts is located. That is your account name for CSE 15L.
 2. After clicking the button, you then must click on the change your password link. Then type in your username and password again.
