@@ -39,21 +39,10 @@ class StringServer {
     }
 }
 ```
-| Path      | Description |
-| ----------- | ----------- |
-| `add-message?s=hello there`
-![Image](Lab-Report-2-Photos/Lab-Report-First_Message.png)| * b
-|
-| Paragraph   | Text        |
-
-
-* Methods called: `public String handleRequest(URI url)` and `class StringServer`
-* 
-
-Path : `add-message?s=bye bye`
-![Image](Lab-Report-2-Photos/Lab-Report-Second-Message.png)
-* Methods called: `public String handleRequest(URI url)` and `class StringServer`
-
+| Wesbsite Url & Screenshot     | Description |
+| ----------- |----------- |
+| `http://localhost:8008/add-message?s=hello there`<br><img src=Lab-Report-2-Photos/Lab-Report-First_Message.png height = "auto" width="2000">|The `class StringServer` method is called when first running the program in which it takes the command line argument of 8008 and turns it from a String to an int value as the port number. As you click on the link for the website and type in `/add-message?s=hello there` at the end of the `localhost:8008` url, the `class Handler implements URLHandler` method takes in that input, adds the `hello there` part of query to an array called `String[] parameters`, adds that string to the `String wordsString` variable with adding a `\n` (newline) and lastly returning the variable `wordsString`.|
+| `http://localhost:8008/add-message?s=bye bye` <br> <img src=Lab-Report-2-Photos/Lab-Report-Second-Message.png height = "auto" width="2000">|`public String handleRequest(URI url)` is called with it taking the url `http://localhost:8008/add-message?s=bye bye` and having the `bye bye` part of the query added to the variable `wordString`. The value of the `int port` isn't changed because the `class StringServer` method isn't being called.|
 ## **_Part 2_**
 Chosen faulty method from the ArrayExamples.java file :
 ```
@@ -89,3 +78,4 @@ An input that doesn’t induce a failure :
 | `arr[i] = newArray[arr.length - i - 1];` is the bug because it tries to assign values of the array `int[] newArray` but its newly created meaning that all its values are 0.  | Now this addresses the issue by having the newly created array `int[] newArray` as the one that have values being inputted in it with it taking in values from the original array `int[] arr`. Also, now instead of `return arr` its now `return newArray` for its a new array that is being returned.    |
 
 ## **_Part 3_**
+During Lab 2, I learned how to fork code from Github into my own computer, edit that code using VScode, and save the changes to my own Github account. Also, during that same lab I learned how to create my own server and learned that you can change the url of a website to change contents of the page you're viewing. During Lab 3, I learned how to ultize Junit to find the symptom of a bug in one of your methods and to take that knowledge and try and fix the bugs in the method to make it run as you want it to.
