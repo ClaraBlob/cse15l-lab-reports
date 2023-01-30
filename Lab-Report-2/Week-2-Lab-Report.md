@@ -77,7 +77,7 @@ class StringServer {
  
  | **Before**      | **After** |
 | ----------- | ----------- |
-| <pre>static int[] reversed(int[] arr) {<br>  int[] newArray = new int[arr.length];<br>  for(int i = 0; i < arr.length; i += 1) {<br>    <ins>arr[i] = newArray[arr.length - i - 1];</ins><br>  }<br>  return arr;<br>}</pre>| <pre>static int[] reversed(int[] arr) {<br>  int[] newArray = new int[arr.length];<br>  for (int i = 0; i < arr.length; i += 1) {<br>    <ins>newArray[i] = arr[arr.length - i - 1];</ins><br>  }<br>  return newArray;<br>}    </pre> |
+| static int[] reversed(int[] arr) {<br> &nbsp; &nbsp; int[] newArray = new int[arr.length];<br> &nbsp; &nbsp; for(int i = 0; i < arr.length; i += 1) {<br>    &nbsp; &nbsp; &nbsp; &nbsp; <ins>arr[i] = newArray[arr.length - i - 1];</ins><br> &nbsp; &nbsp; }<br> &nbsp; &nbsp;  return arr;<br>}| static int[] reversed(int[] arr) {<br>  &nbsp; &nbsp; int[] newArray = new int[arr.length];<br> &nbsp; &nbsp; for (int i = 0; i < arr.length; i += 1) {<br>   &nbsp; &nbsp;&nbsp; &nbsp; <ins>newArray[i] = arr[arr.length - i - 1];</ins><br> &nbsp; &nbsp; }<br> &nbsp; &nbsp;  return newArray;<br>}    |
 | `arr[i] = newArray[arr.length - i - 1];` is the bug because it tries to assign values of the array `int[] newArray` but its newly created meaning that all its values are 0.  | Now this addresses the issue by having the newly created array `int[] newArray` as the one that have values being inputted in it with it taking in values from the original array `int[] arr`. Also, now instead of `return arr` its now `return newArray` for its a new array that is being returned.    |
 
 ## **_Part 3_**
