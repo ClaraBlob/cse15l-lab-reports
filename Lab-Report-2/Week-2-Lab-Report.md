@@ -73,7 +73,7 @@ class StringServer {
   }
  ```
  **Symptom of faulty program :**
- <img src=Lab-Report-2-Photos/Lab-Report-2-Symptom.png>
+ <img src="./Lab-Report-2-Photos/Lab-Report-2-Symptom.png">
  
  | **Before**      | **After** |
 | ----------- | ----------- |
