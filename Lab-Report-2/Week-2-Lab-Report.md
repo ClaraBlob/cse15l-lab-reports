@@ -1,6 +1,6 @@
 # **Week 2 Lab Report**
 ## **_Part 1_**
-Code for StringServer.java
+**Code for StringServer.java**
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -39,12 +39,13 @@ class StringServer {
     }
 }
 ```
-| Wesbsite Url & Screenshot     | Description |
+| **Wesbsite Url & Screenshot **    | **Description** |
 | ----------- |----------- |
 | `http://localhost:8008/add-message?s=hello there`<br><img src=Lab-Report-2-Photos/Lab-Report-First_Message.png height = "auto" width="2000">|The `class StringServer` method is called when first running the program in which it takes the command line argument of 8008 and turns it from a String to an int value as the port number. As you click on the link for the website and type in `/add-message?s=hello there` at the end of the `localhost:8008` url, the `class Handler implements URLHandler` method takes in that input, adds the `hello there` part of query to an array called `String[] parameters`, adds that string to the `String wordsString` variable with adding a `\n` (newline) and lastly returning the variable `wordsString`.|
 | `http://localhost:8008/add-message?s=bye bye` <br> <img src=Lab-Report-2-Photos/Lab-Report-Second-Message.png height = "auto" width="2000">|`public String handleRequest(URI url)` is called with it taking the url `http://localhost:8008/add-message?s=bye bye` and having the `bye bye` part of the query added to the variable `wordString`. The value of the `int port` isn't changed because the `class StringServer` method isn't being called.|
+
 ## **_Part 2_**
-Chosen faulty method from the ArrayExamples.java file :
+**Chosen faulty method from the ArrayExamples.java file :**
 ```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -54,7 +55,7 @@ Chosen faulty method from the ArrayExamples.java file :
     return arr;
   }
 ```
-A failure-inducing input for the buggy program:
+**A failure-inducing input for the buggy program :**
 ```
 @Test
   public void testReversedMultiple() {
@@ -62,7 +63,7 @@ A failure-inducing input for the buggy program:
     assertArrayEquals(new int[] { 1, 2, 3 }, ArrayExamples.reversed(input1));
   }
   ```
-An input that doesn’t induce a failure :
+**An input that doesn’t induce a failure :**
 ```
 @Test
   public void testReversed() {
@@ -70,9 +71,9 @@ An input that doesn’t induce a failure :
     assertArrayEquals(new int[] {}, ArrayExamples.reversed(input1));
   }
  ```
- Symptom of faulty program:
- ![Image]()
- | Before      | After |
+ **Symptom of faulty program :**
+ <img src=Lab-Report-2-Photos/Lab-Report-2-Symptom.png>
+ | **Before**      | **After** |
 | ----------- | ----------- |
 | <pre>static int[] reversed(int[] arr) {<br>  int[] newArray = new int[arr.length];<br>  for(int i = 0; i < arr.length; i += 1) {<br>    <ins>arr[i] = newArray[arr.length - i - 1];</ins><br> }<br> return arr;<br>}| <pre>static int[] reversed(int[] arr) {<br> int[] newArray = new int[arr.length];<br> for (int i = 0; i < arr.length; i += 1) {<br>   <ins>newArray[i] = arr[arr.length - i - 1];</ins><br> }<br> return newArray;<br>}      |
 | `arr[i] = newArray[arr.length - i - 1];` is the bug because it tries to assign values of the array `int[] newArray` but its newly created meaning that all its values are 0.  | Now this addresses the issue by having the newly created array `int[] newArray` as the one that have values being inputted in it with it taking in values from the original array `int[] arr`. Also, now instead of `return arr` its now `return newArray` for its a new array that is being returned.    |
