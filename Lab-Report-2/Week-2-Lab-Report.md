@@ -39,7 +39,7 @@ class StringServer {
     }
 }
 ```
-| **Wesbsite Url & Screenshot **    | **Description** |
+| **Wesbsite Url & Screenshot**    | **Description** |
 | ----------- |----------- |
 | `http://localhost:8008/add-message?s=hello there`<br><img src=Lab-Report-2-Photos/Lab-Report-First_Message.png height = "auto" width="2000">|The `class StringServer` method is called when first running the program in which it takes the command line argument of 8008 and turns it from a String to an int value as the port number. As you click on the link for the website and type in `/add-message?s=hello there` at the end of the `localhost:8008` url, the `class Handler implements URLHandler` method takes in that input, adds the `hello there` part of query to an array called `String[] parameters`, adds that string to the `String wordsString` variable with adding a `\n` (newline) and lastly returning the variable `wordsString`.|
 | `http://localhost:8008/add-message?s=bye bye` <br> <img src=Lab-Report-2-Photos/Lab-Report-Second-Message.png height = "auto" width="2000">|`public String handleRequest(URI url)` is called with it taking the url `http://localhost:8008/add-message?s=bye bye` and having the `bye bye` part of the query added to the variable `wordString`. The value of the `int port` isn't changed because the `class StringServer` method isn't being called.|
