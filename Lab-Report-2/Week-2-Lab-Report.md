@@ -39,6 +39,7 @@ class StringServer {
     }
 }
 ```
+
 | **Wesbsite Url & Screenshot**    | **Description** |
 | ----------- |----------- |
 | `http://localhost:8008/add-message?s=hello there`<br><img src=Lab-Report-2-Photos/Lab-Report-First_Message.png height = "auto" width="2000">|The `class StringServer` method is called when first running the program in which it takes the command line argument of 8008 and turns it from a String to an int value as the port number. As you click on the link for the website and type in `/add-message?s=hello there` at the end of the `localhost:8008` url, the `class Handler implements URLHandler` method takes in that input, adds the `hello there` part of query to an array called `String[] parameters`, adds that string to the `String wordsString` variable with adding a `\n` (newline) and lastly returning the variable `wordsString`.|
@@ -73,6 +74,7 @@ class StringServer {
  ```
  **Symptom of faulty program :**
  <img src=Lab-Report-2-Photos/Lab-Report-2-Symptom.png>
+ 
  | **Before**      | **After** |
 | ----------- | ----------- |
 | <pre>static int[] reversed(int[] arr) {<br>  int[] newArray = new int[arr.length];<br>  for(int i = 0; i < arr.length; i += 1) {<br>    <ins>arr[i] = newArray[arr.length - i - 1];</ins><br> }<br> return arr;<br>}| <pre>static int[] reversed(int[] arr) {<br> int[] newArray = new int[arr.length];<br> for (int i = 0; i < arr.length; i += 1) {<br>   <ins>newArray[i] = arr[arr.length - i - 1];</ins><br> }<br> return newArray;<br>}      |
