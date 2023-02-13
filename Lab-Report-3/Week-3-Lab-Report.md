@@ -127,7 +127,7 @@ This is displays the `HandRIstanbul.txt` file and when upon quitting `less`, the
 Picture of the highlighted `zoot`:
 ![](./Lab-Report-3-Photos/Lab_Report_3_Search_zoot.png)
 
-**Explanation:**
+**Explanation: **
 Using `less -NJ non-fiction/OUP/Castro/chZ.txt` command and typying in `/zoot` highlighted all the occurances of `zoot` in the text file with additional to signifying which lines those occurances appear. Also, the format has duplicate lines due to the fact that its trying to have all the words into one screen so all of the occurances are visible at once. That `less -J [filename]` command is helpful for marking where occurances of an input and to take note which lines those occurances appear in.
 
 ### **Example 2:**
@@ -191,7 +191,7 @@ Using `/Americans` while viewing both files:
 **Explanation:**
 With inputted two files for viewing, this allows me to use `/Americans` for both files. To move from file to file, type `:n` for next page and `:p` for previous page. That `less -J [filename]` command allows for the comparison of multiple files when using the `/search` command. This is very helpful if you are trying to compare what words or phrases one file has to another one. You can see on which lines those occurrences happen and compare it to the other files.
 
- ## **Command Option #3:** `less -p[pattern] [filename]`
+## **Command Option #3:** `less -p[pattern] [filename]`
 
  This command tells `less` to start at the first occurrence of the specified pattern of the specified file and it allow highlights all of the occurances as well.
  
@@ -252,17 +252,17 @@ Architecture changes at a bewildering pace. Consider only the last 50 years of m
 
  ```
  ### **Example 1:**
- `less -p "Architecture" non-fiction/OUP/Rybczynski/ch2.txt`
+ `less -Np "Architecture" non-fiction/OUP/Rybczynski/ch2.txt`
  ![Image](./Lab-Report-3-Photos/Lab_Report_3_Search_Architecture.png)
   
   **Explanation:** This shows the command takes the pattern of "Architecture" and starts the display where the first occurance happens, and not at the beginning of the text file. This is very helpful if you wanted to see on which lines a particular word or phrase is located at the beginning of your command instead of using the `/search` command when in less. 
   
  ### **Example 2:**
- `less -p "hi" non-fiction/OUP/Rybczynski/ch2.txt`
+ `less -Np "hi" non-fiction/OUP/Rybczynski/ch2.txt`
  ![Image](./Lab-Report-3-Photos/Lab_Report_3_Search_hi.png)
  **Explanation:** This shows that you don't need a complete word as a pattern for `less -p [pattern] [filename]` command and can use letters and even phrases to find in a text file. This is very useful when you want to try and find not particular words, but maybe phrases and letters in the file and take down on which lines they appear very frequently. 
  
- ## **Command Option #4:** `less -o [filename]`
+ ## **Command Option #4: ** `less -o [filename]`
 This command line option makes is so `less` copies the input of a specified file (with it needing to be a pipe(|)) into another text file. When targeting an already existing file, it prompt with `Ovewrite`(rewrites the existing file), `Append`(adds upon the existing file), or `Don't log`(leaves the existing file untouched).
  
  ### **Example 1:**
@@ -331,9 +331,9 @@ To make the most of your trip you’ll need to tune your mind to “Bahamian tim
 Every island has its own individual character, forged by a unique history and development, in fact the Bahamas could be said to be several different holiday experiences in one country, so it’s important to choose your island carefully to get the kind of holiday you want.
 
 ```
-**Explanation:** This example takes in 3 files, `Amsterdam-Intro.txt`, `Athens-Intro.txt`, and `Bahamas-Intro.txt` and it pipes it into a text file named `berlitz2Intros.txt`. That `less -o` command copied the output of those text files and then it inputted that into the `berlitz2Intros.txt` text file. This is very helpful when trying to compile multiple text files that have similar topics into one file for organization and easier access to those files without having to individually search each file.
+**Explanation: ** This example takes in 3 files, `Amsterdam-Intro.txt`, `Athens-Intro.txt`, and `Bahamas-Intro.txt` and it pipes it into a text file named `berlitz2Intros.txt`. That `less -o` command copied the output of those text files and then it inputted that into the `berlitz2Intros.txt` text file. This is very helpful when trying to compile multiple text files that have similar topics into one file for organization and easier access to those files without having to individually search each file.
  
-### **Example 2**: 
+### **Example 2:** 
 `cat travel_guides/berlitz2/Algarve-Intro.txt| less -o berlitz2Intros.txt`
 ```
 $ cat berlitz2Intros.txt 
@@ -426,7 +426,7 @@ Besides beaches, the Algarve’s major attractions are towns that lived through 
 Despite the region’s ancient roots, few historic monuments survive from before 1755, when the Algarve was rocked by a monumental earthquake that took thousands of lives and leveled buildings as far north as Lisbon. Still, you’ll find vestiges of a vibrant past, including evocative castle ruins and churches with extraordinary displays of Portuguese glazed tiles. Even the humblest village has a classic white church, a sleepy plaza shaded by vivid purple jacaranda, and, if you time it right, the drama of the local market.
 The Portuguese are famously hospitable, if reserved. And they remain tolerant and helpful, even though they know that their lovely coast is no longer just theirs.
 ```
-**Explanation**: Now this time when taking in the `Algarve-Intro.txt` text file into the `berlitz2Intros.txt` using the `less -o [filename]` command, it will ask if you want to override, append or don't log that text file. I appended which resulted in `Algarve-Intro.txt` being appended to the `berlitz2Intros.txt` text file. This is very useful because this means that you can at any time add onto that organized file that you have with the other similar topics or you can overwrite what is in that file with another text file.
+**Explanation:** Now this time when taking in the `Algarve-Intro.txt` text file into the `berlitz2Intros.txt` using the `less -o [filename]` command, it will ask if you want to override, append or don't log that text file. I appended which resulted in `Algarve-Intro.txt` being appended to the `berlitz2Intros.txt` text file. This is very useful because this means that you can at any time add onto that organized file that you have with the other similar topics or you can overwrite what is in that file with another text file.
 
 
  
