@@ -262,10 +262,10 @@ Architecture changes at a bewildering pace. Consider only the last 50 years of m
  ![Image](./Lab-Report-3-Photos/Lab_Report_3_Search_hi.png)
  **Explanation:** This shows that you don't need a complete word as a pattern for `less -p [pattern] [filename]` command and can use letters and even phrases to find in a text file. This is very useful when you want to try and find not particular words, but maybe phrases and letters in the file and take down on which lines they appear very frequently. 
  
- ## **Command Option #4: ** `less -o [filename]`
+## **Command Option #4:**  `less -o [filename]`
 This command line option makes is so `less` copies the input of a specified file (with it needing to be a pipe(|)) into another text file. When targeting an already existing file, it prompt with `Ovewrite`(rewrites the existing file), `Append`(adds upon the existing file), or `Don't log`(leaves the existing file untouched).
  
- ### **Example 1:**
+### **Example 1:**
  `cat travel_guides/berlitz2/Amsterdam-Intro.txt travel_guides/berlitz2/Athens-Intro.txt travel_guides/berlitz2/Bahamas-Intro.txt travel_guides/berlitz2/Algarve-Intro.txt| less -o berlitz2Intros.txt`
  ```
  $ cat berlitz2Intros.txt
@@ -333,7 +333,7 @@ Every island has its own individual character, forged by a unique history and de
 ```
 **Explanation: ** This example takes in 3 files, `Amsterdam-Intro.txt`, `Athens-Intro.txt`, and `Bahamas-Intro.txt` and it pipes it into a text file named `berlitz2Intros.txt`. That `less -o` command copied the output of those text files and then it inputted that into the `berlitz2Intros.txt` text file. This is very helpful when trying to compile multiple text files that have similar topics into one file for organization and easier access to those files without having to individually search each file.
  
-### **Example 2:** 
+### **Example 2:**
 `cat travel_guides/berlitz2/Algarve-Intro.txt| less -o berlitz2Intros.txt`
 ```
 $ cat berlitz2Intros.txt 
