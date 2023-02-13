@@ -251,13 +251,13 @@ Architecture changes at a bewildering pace. Consider only the last 50 years of m
 
 
  ```
- ### **Example 1:**
+### **Example 1:**
  `less -Np "Architecture" non-fiction/OUP/Rybczynski/ch2.txt`
  ![Image](./Lab-Report-3-Photos/Lab_Report_3_Search_Architecture.png)
   
   **Explanation:** This shows the command takes the pattern of "Architecture" and starts the display where the first occurance happens, and not at the beginning of the text file. This is very helpful if you wanted to see on which lines a particular word or phrase is located at the beginning of your command instead of using the `/search` command when in less. 
   
- ### **Example 2:**
+### **Example 2:**
  `less -Np "hi" non-fiction/OUP/Rybczynski/ch2.txt`
  ![Image](./Lab-Report-3-Photos/Lab_Report_3_Search_hi.png)
  **Explanation:** This shows that you don't need a complete word as a pattern for `less -p [pattern] [filename]` command and can use letters and even phrases to find in a text file. This is very useful when you want to try and find not particular words, but maybe phrases and letters in the file and take down on which lines they appear very frequently. 
