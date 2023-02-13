@@ -331,7 +331,7 @@ To make the most of your trip you’ll need to tune your mind to “Bahamian tim
 Every island has its own individual character, forged by a unique history and development, in fact the Bahamas could be said to be several different holiday experiences in one country, so it’s important to choose your island carefully to get the kind of holiday you want.
 
 ```
-**Explanation: ** This example takes in 3 files, `Amsterdam-Intro.txt`, `Athens-Intro.txt`, and `Bahamas-Intro.txt` and it pipes it into a text file named `berlitz2Intros.txt`. That `less -o` command copied the output of those text files and then it inputted that into the `berlitz2Intros.txt` text file. This is very helpful when trying to compile multiple text files that have similar topics into one file for organization and easier access to those files without having to individually search each file.
+**Explanation:** This example takes in 3 files, `Amsterdam-Intro.txt`, `Athens-Intro.txt`, and `Bahamas-Intro.txt` and it pipes it into a text file named `berlitz2Intros.txt`. That `less -o` command copied the output of those text files and then it inputted that into the `berlitz2Intros.txt` text file. This is very helpful when trying to compile multiple text files that have similar topics into one file for organization and easier access to those files without having to individually search each file.
  
 ### **Example 2:**
 `cat travel_guides/berlitz2/Algarve-Intro.txt| less -o berlitz2Intros.txt`
