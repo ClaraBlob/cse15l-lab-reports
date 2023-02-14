@@ -127,7 +127,7 @@ This is displays the `HandRIstanbul.txt` file and when upon quitting `less`, the
 Picture of the highlighted `zoot`:
 ![](./Lab-Report-3-Photos/Lab_Report_3_Search_zoot.png)
 
-**Explanation: **
+**Explanation:**
 Using `less -NJ non-fiction/OUP/Castro/chZ.txt` command and typying in `/zoot` highlighted all the occurances of `zoot` in the text file with additional to signifying which lines those occurances appear. Also, the format has duplicate lines due to the fact that its trying to have all the words into one screen so all of the occurances are visible at once. That `less -J [filename]` command is helpful for marking where occurances of an input and to take note which lines those occurances appear in.
 
 ### **Example 2:**
